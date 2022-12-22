@@ -1,4 +1,4 @@
-import { chooseLanguage } from "@/commands/settings";
+import { chooseLanguage } from "@/dialogs/language";
 import { ColorEnum } from "@/enums/color";
 import { $t } from "@/i18n";
 import {
@@ -21,30 +21,28 @@ export class CommonPlayerEvent extends BasePlayerEvent<MyPlayer> {
   protected newPlayer(playerid: number): MyPlayer {
     return new MyPlayer(playerid);
   }
-  protected onConnect(player: MyPlayer): number {
-    (async () => {
-      await chooseLanguage(player);
-      player.sendClientMessage(
-        ColorEnum.PrimaryBlue,
-        $t("player.hello", [player.getName()], player.locale)
-      );
-      player.sendClientMessage(
-        ColorEnum.Warn,
-        $t("player.version", [player.getVersion()], player.locale)
-      );
-      player.sendClientMessage(
-        ColorEnum.White,
-        $t("player.ip", [player.getIp()], player.locale)
-      );
-      player.sendClientMessage(
-        ColorEnum.White,
-        $t("player.ping", [player.getPing()], player.locale)
-      );
-      player.sendClientMessage(
-        ColorEnum.White,
-        $t("player.rawIp", [player.getRawIp()], player.locale)
-      );
-    })();
+  protected async onConnect(player: MyPlayer): Promise<number> {
+    await chooseLanguage(player);
+    player.sendClientMessage(
+      ColorEnum.PrimaryBlue,
+      $t("player.hello", [player.getName()], player.locale)
+    );
+    player.sendClientMessage(
+      ColorEnum.Warn,
+      $t("player.version", [player.getVersion()], player.locale)
+    );
+    player.sendClientMessage(
+      ColorEnum.White,
+      $t("player.ip", [player.getIp()], player.locale)
+    );
+    player.sendClientMessage(
+      ColorEnum.White,
+      $t("player.ping", [player.getPing()], player.locale)
+    );
+    player.sendClientMessage(
+      ColorEnum.White,
+      $t("player.rawIp", [player.getRawIp()], player.locale)
+    );
     return 1;
   }
   protected onDisconnect(player: MyPlayer, reason: number): number {
