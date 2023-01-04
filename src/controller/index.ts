@@ -1,5 +1,6 @@
 import { $t } from "@/i18n";
-import { BaseGameMode, logger } from "omp-node-lib";
+import { logger } from "@/logger";
+import { BaseGameMode } from "omp-node-lib";
 
 export class MyGameMode extends BaseGameMode {
   protected onInit(): void {

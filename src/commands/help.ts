@@ -1,7 +1,8 @@
 import { MyDialog } from "@/controller/dialog/commonStruct";
 import { playerEvent } from "@/controller/player/commonEvent";
 import { $t } from "@/i18n";
-import { DialogStylesEnum, logger } from "omp-node-lib";
+import { logger } from "@/logger";
+import { DialogStylesEnum } from "omp-node-lib";
 
 const helpDialog = new MyDialog({
   style: DialogStylesEnum.MSGBOX,

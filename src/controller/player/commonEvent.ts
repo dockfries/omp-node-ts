@@ -1,13 +1,13 @@
 import { chooseLanguage } from "@/dialogs/language";
 import { ColorEnum } from "@/enums/color";
 import { $t } from "@/i18n";
+import { logger } from "@/logger";
 import {
   BasePlayerEvent,
   BodyPartsEnum,
   ICmdErr,
   InvalidEnum,
   KeysEnum,
-  logger,
   PlayerStateEnum,
   TCommonCallback,
   WeaponEnum,
