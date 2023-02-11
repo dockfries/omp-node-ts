@@ -1,16 +1,21 @@
-import { LanguageEnum } from "@/enums/language";
+import { CharsetEnum, LanguageEnum } from "@/enums/language";
 import { I18n, TLocales } from "omp-node-lib";
-import zh_cn from "./locales/zh-cn.json";
-import en from "./locales/en.json";
+import zh_cn from "./locales/zh-CN.json";
+import en_us from "./locales/en-US.json";
 
 export const locales: TLocales = {
+  [LanguageEnum.Chinese]: zh_cn,
+  [LanguageEnum.English]: en_us,
+};
+
+export const localesTitle = {
   [LanguageEnum.Chinese]: {
-    label: "Chinese",
-    value: zh_cn,
+    [CharsetEnum.Chinese]: "简体中文",
+    [CharsetEnum.English]: "Chinese",
   },
   [LanguageEnum.English]: {
-    label: "English",
-    value: en,
+    [CharsetEnum.Chinese]: "英文",
+    [CharsetEnum.English]: "English",
   },
 };
 

@@ -1,10 +1,25 @@
 {
   "name": "omp-server",
   "version": "1.0.0",
+  "private": true,
   "description": "A very simple omp server template that uses the samp-node plugin and the omp-node-lib library.",
+  "keywords": [
+    "sa-mp",
+    "sa:mp",
+    "open.mp",
+    "omp",
+    "gamemode",
+    "samp-node"
+  ],
+  "homepage": "https://github.com/YuCarl77/omp-node-ts#readme",
+  "bugs": {
+    "url": "https://github.com/YuCarl77/omp-node-ts/issues"
+  },
+  "license": "ISC",
+  "author": "YuCarl77",
   "scripts": {
     "serve": "omp-server",
-    "dev": "npm run clean && npm-run-all -p -r -l dev:watch dev:server",
+    "dev": "npm-run-all -p -r -l dev:server dev:watch",
     "dev:watch": "cross-env NODE_ENV=dev rollup -c -w",
     "dev:server": "nodemon -x omp-server -w dist/bundle.js -d 2",
     "build": "npm run clean && cross-env NODE_ENV=prod rollup -c",
@@ -17,24 +32,10 @@
       "pre-commit": "npm run lint"
     }
   },
-  "keywords": [
-    "sa-mp",
-    "sa:mp",
-    "open.mp",
-    "omp",
-    "gamemode",
-    "samp-node"
-  ],
-  "author": "YuCarl77",
-  "license": "ISC",
-  "homepage": "https://github.com/YuCarl77/omp-node-ts#readme",
-  "bugs": {
-    "url": "https://github.com/YuCarl77/omp-node-ts/issues"
-  },
   "dependencies": {
-    "omp-node-lib": "^0.6.6",
-    "pino": "^8.8.0",
-    "pino-pretty": "^9.1.1"
+    "omp-node-lib": "^0.8.1",
+    "pino": "^8.10.0",
+    "pino-pretty": "^9.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
@@ -42,12 +43,12 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@sa-mp/node": "^0.2.0",
     "@tsconfig/node16": "^1.0.3",
-    "@types/node": "^18.11.18",
-    "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@typescript-eslint/parser": "^5.48.2",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "cross-env": "^7.0.3",
     "esbuild": "^0.15.18",
-    "eslint": "^8.32.0",
+    "eslint": "^8.34.0",
     "husky": "^8.0.3",
     "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
@@ -56,6 +57,6 @@
     "rollup-plugin-esbuild": "^4.10.3",
     "rollup-plugin-node-externals": "^4.1.1",
     "rollup-plugin-typescript-paths": "^1.4.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }

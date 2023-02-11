@@ -14,5 +14,5 @@ playerEvent.onCommandText("help", async (player) => {
   helpDialog.button1 = $t("dialog.help.button1", null, player.locale);
   const res = await helpDialog.show(player);
   logger.info(res);
-  return 1;
+  return true;
 });

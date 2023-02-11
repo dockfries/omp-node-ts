@@ -10,7 +10,7 @@ playerEvent.onCommandText(["race"], (player, ...args) => {
       ColorEnum.White,
       $t("command.next", [next.toString()], player.locale)
     );
-    return 1;
+    return true;
   }
-  return 0;
+  return false;
 });

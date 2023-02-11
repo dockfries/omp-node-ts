@@ -7,7 +7,7 @@ playerEvent.onCommandText(["r", "reg", "register"], (player, ...args) => {
     ColorEnum.White,
     $t("command.reg", [args], player.locale)
   );
-  return 1;
+  return true;
 });
 
 playerEvent.onCommandText(["l", "login"], (player, ...args) => {

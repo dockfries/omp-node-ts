@@ -54,7 +54,7 @@ npm run serve
 
 ## Notice
 
-- [Why does it crash first every time you run development?](https://github.com/YuCarl77/omp-node-ts/issues/12)
+- [Why does crash the first time you run it?](https://github.com/YuCarl77/omp-node-ts/issues/12)
 - `samp-node` plugin should be executed after other plugins, see `config.json -> pawn.legacy_plugins`
 - `samp-node` requires compliance with the `commonjs` specification and has been converted via `rollup`
 

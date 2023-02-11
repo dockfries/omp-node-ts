@@ -3,30 +3,22 @@ import { logger } from "@/logger";
 import { BaseGameMode } from "omp-node-lib";
 
 export class MyGameMode extends BaseGameMode {
-  protected onInit(): void {
+  onInit(): void {
     logger.info($t("server.running"));
   }
-  protected onExit(): void {
+  onExit(): void {
     logger.info($t("server.exit"));
   }
-  protected onIncomingConnection(
-    playerid: number,
-    ipAddress: string,
-    port: number
-  ): number {
+  onIncomingConnection(playerid: number, ipAddress: string, port: number) {
     logger.info($t("server.incoming", [playerid, ipAddress, port]));
-    return 1;
+    return true;
   }
-  protected onRconCommand(cmd: string): number {
+  onRconCommand(cmd: string) {
     logger.info($t("server.rcon.command", [cmd]));
-    return 1;
+    return true;
   }
-  protected onRconLoginAttempt(
-    ip: string,
-    password: string,
-    success: boolean
-  ): number {
+  onRconLoginAttempt(ip: string, password: string, success: boolean) {
     logger.info($t("server.rcon.attempt", [ip, password, success]));
-    return 1;
+    return true;
   }
 }

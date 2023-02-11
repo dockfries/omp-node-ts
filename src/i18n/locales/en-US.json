@@ -10,7 +10,10 @@
   },
   "command": {
     "next": "The next parameter that you enter is %s",
-    "device": "Server: your device is %s",
+    "official": {
+      "yes": "Server: You are using the official client",
+      "no": "Server: You are using an unofficial client"
+    },
     "reg": "Server: this is a reg example %s",
     "login": "Server: this is a login example %s",
     "error": "Server: error command %s, code: %s, err: %s"

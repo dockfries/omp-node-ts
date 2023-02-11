@@ -5,14 +5,18 @@ import { $t } from "@/i18n";
 
 playerEvent.onCommandText(["language", "lang"], (player) => {
   chooseLanguage(player);
-  return 1;
+  return true;
 });
 
-playerEvent.onCommandText("device", async (player) => {
-  const isAndroid = await player.isAndroid();
+playerEvent.onCommandText("isOfficial", (player) => {
+  const isOfficial = player.isUsingOfficialClient();
   player.sendClientMessage(
     ColorEnum.White,
-    $t("command.device", [isAndroid ? "android" : "pc"], player.locale)
+    $t(
+      isOfficial ? "command.offical.yes" : "command.offical.no",
+      null,
+      player.locale
+    )
   );
-  return 1;
+  return true;
 });

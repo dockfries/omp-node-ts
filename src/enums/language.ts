@@ -1,9 +1,9 @@
 export enum LanguageEnum {
-  Chinese,
-  English,
+  Chinese = "zh-CN",
+  English = "en-US",
 }
 
 export enum CharsetEnum {
   Chinese = "gbk",
-  Common = "utf8",
+  English = "utf8",
 }
