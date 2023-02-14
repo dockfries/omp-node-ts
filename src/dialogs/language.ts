@@ -28,10 +28,10 @@ const chooseCharsetDialog = new MyDialog({
 
 export const chooseLanguage = (p: MyPlayer) => {
   return new Promise<MyPlayer>((resolve) => {
-    const charset = p.charset as CharsetEnum;
+    const currLocale = p.locale as LanguageEnum;
     chooseLangDialog.info = Object.values(localesTitle).reduce(
       (prev, curr, idx: number): string => {
-        return `${prev}${idx + 1}.${curr[charset]}\n`;
+        return `${prev}${idx + 1}.${curr[currLocale]}\n`;
       },
       ""
     );
@@ -42,7 +42,7 @@ export const chooseLanguage = (p: MyPlayer) => {
         p.charset = charsets[charsetIdx];
         p.sendClientMessage(
           ColorEnum.White,
-          $t("dialog.lang.change", [localesTitle[locale][charset]], p.locale)
+          $t("dialog.lang.change", [localesTitle[locale][locale]], p.locale)
         );
         resolve(p);
       });

@@ -25,7 +25,7 @@
       "button1": "Close"
     },
     "lang": {
-      "change": "You are using %s, and you can modify the language again through / language."
+      "change": "You are using %s, and you can modify the language again through /language."
     }
   },
   "player": {

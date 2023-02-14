@@ -15,7 +15,7 @@ specifiers:
   husky: ^8.0.3
   nodemon: ^2.0.20
   npm-run-all: ^4.1.5
-  omp-node-lib: ^0.8.0
+  omp-node-lib: ^0.8.2
   pino: ^8.10.0
   pino-pretty: ^9.2.0
   rimraf: ^3.0.2
@@ -26,7 +26,7 @@ specifiers:
   typescript: ^4.9.5
 
 dependencies:
-  omp-node-lib: 0.8.0
+  omp-node-lib: 0.8.2
   pino: 8.10.0
   pino-pretty: 9.2.0
 
@@ -1747,8 +1747,8 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /omp-node-lib/0.8.0:
-    resolution: {integrity: sha512-a/2UOTbhU7Kaf/UfaqdoEolVfgusf49pXzucqWl/fnjJF1tgDIDLjvm+b9Ox8AfMEd704fB7tSjY+OXt4TX1Cg==}
+  /omp-node-lib/0.8.2:
+    resolution: {integrity: sha512-1k5ZQy0/2KpWCMP2mjYaQZtRgtXAl6pqHjlNb/yyh8KJ9dwprTUU58fOly8SyDYluwaikwvaYkQV3hTbvRAYRw==}
     dependencies:
       iconv-lite: 0.6.3
       lodash: 4.17.21
