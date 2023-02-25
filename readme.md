@@ -39,17 +39,17 @@ vim config.json
 },
 
 # develop (start compilation, listen for changes and restart automatically)
-npm run dev
+pnpm dev
 ```
 
 ## Build
 
 ```sh
 # build for production environment
-npm run build
+pnpm build
 
 # run omp server
-npm run serve
+pnpm serve
 ```
 
 ## Notice
