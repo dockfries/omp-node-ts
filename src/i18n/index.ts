@@ -1,5 +1,5 @@
 import { LanguageEnum } from "@/enums/language";
-import { I18n, TLocales } from "omp-node-lib";
+import { I18n, TLocales } from "@infernus/core";
 import zh_cn from "./locales/zh-CN.json";
 import en_us from "./locales/en-US.json";
 

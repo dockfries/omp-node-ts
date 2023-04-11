@@ -1,8 +1,8 @@
 import { $t } from "@/i18n";
 import { logger } from "@/logger";
-import { BaseGameMode } from "omp-node-lib";
+import { GameMode } from "@infernus/core";
 
-export class MyGameMode extends BaseGameMode {
+export class MyGameMode extends GameMode {
   onInit(): void {
     logger.info($t("server.running"));
   }

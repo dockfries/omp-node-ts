@@ -2,7 +2,7 @@
   "name": "omp-server",
   "version": "1.0.0",
   "private": true,
-  "description": "A very simple omp server template that uses the samp-node plugin and the omp-node-lib library.",
+  "description": "A very simple omp server template that uses the samp-node plugin and the @infernus/core library.",
   "keywords": [
     "sa-mp",
     "sa:mp",
@@ -11,9 +11,9 @@
     "gamemode",
     "samp-node"
   ],
-  "homepage": "https://github.com/dockfries/omp-node-ts#readme",
+  "homepage": "https://github.com/dockfries/omp-node-starter#readme",
   "bugs": {
-    "url": "https://github.com/dockfries/omp-node-ts/issues"
+    "url": "https://github.com/dockfries/omp-node-starter/issues"
   },
   "license": "ISC",
   "author": "dockfries",
@@ -33,7 +33,7 @@
     }
   },
   "dependencies": {
-    "omp-node-lib": "^0.8.2",
+    "@infernus/core": "^0.8.6",
     "pino": "^8.10.0",
     "pino-pretty": "^9.2.0"
   },

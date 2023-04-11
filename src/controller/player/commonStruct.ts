@@ -1,3 +1,3 @@
-import { BasePlayer } from "omp-node-lib";
+import { Player } from "@infernus/core";
 
-export class MyPlayer extends BasePlayer {}
+export class MyPlayer extends Player {}

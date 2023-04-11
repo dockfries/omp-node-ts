@@ -1,6 +1,6 @@
 export enum LanguageEnum {
-  Chinese = "zh-CN",
-  English = "en-US",
+  Chinese = "zh_CN",
+  English = "en_US",
 }
 
 export enum CharsetEnum {

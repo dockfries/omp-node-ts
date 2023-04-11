@@ -1,4 +1,4 @@
-import { BaseDialog } from "omp-node-lib";
+import { Dialog } from "@infernus/core";
 import { MyPlayer } from "../player/commonStruct";
 
-export class MyDialog extends BaseDialog<MyPlayer> {}
+export class MyDialog extends Dialog<MyPlayer> {}

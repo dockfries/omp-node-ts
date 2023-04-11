@@ -2,7 +2,7 @@ import { MyDialog } from "@/controller/dialog/commonStruct";
 import { playerEvent } from "@/controller/player/commonEvent";
 import { $t } from "@/i18n";
 import { logger } from "@/logger";
-import { DialogStylesEnum } from "omp-node-lib";
+import { DialogStylesEnum } from "@infernus/core";
 
 const helpDialog = new MyDialog({
   style: DialogStylesEnum.MSGBOX,

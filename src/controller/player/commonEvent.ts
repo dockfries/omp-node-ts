@@ -2,15 +2,10 @@ import { chooseLanguage } from "@/dialogs/language";
 import { ColorEnum } from "@/enums/color";
 import { $t } from "@/i18n";
 import { logger } from "@/logger";
-import {
-  BasePlayerEvent,
-  ICmdErr,
-  KeysEnum,
-  TCommonCallback,
-} from "omp-node-lib";
+import { PlayerEvent, ICmdErr, KeysEnum } from "@infernus/core";
 import { MyPlayer } from "./commonStruct";
 
-export class CommonPlayerEvent extends BasePlayerEvent<MyPlayer> {
+export class CommonPlayerEvent extends PlayerEvent<MyPlayer> {
   async onConnect(player: MyPlayer) {
     await chooseLanguage(player);
     player.sendClientMessage(
