@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@infernus/core':
-    specifier: ^0.9.1
-    version: 0.9.1
+    specifier: ^0.9.3
+    version: 0.9.3
   pino:
     specifier: ^8.14.1
     version: 8.14.1
@@ -150,8 +150,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@infernus/core@0.9.1:
-    resolution: {integrity: sha512-VdhsPcYopGZ8+xqEjkMwXkBI38K1EGF63hiaTQ+iC0TbvK+bDTqYOzSgTT5Ow4ew3JQTmgkDsKAKlkdAgMBFpA==}
+  /@infernus/core@0.9.3:
+    resolution: {integrity: sha512-fnGr6OH16/M2gZTI/j5BkCaGHvVLiO5NjMUQvc+aCbwfA+pdoENI+TU2RkdVtxDOESbL0IBC6FRby9EcyH8NnQ==}
     dependencies:
       '@infernus/streamer': 0.2.4
       '@infernus/wrapper': 0.2.5
