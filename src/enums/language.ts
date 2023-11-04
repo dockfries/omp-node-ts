@@ -5,5 +5,5 @@ export enum LanguageEnum {
 
 export enum CharsetEnum {
   Chinese = "gbk",
-  English = "utf8",
+  English = "ISO-8859-1",
 }
