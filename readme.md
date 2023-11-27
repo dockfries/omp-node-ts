@@ -1,13 +1,6 @@
 # Introduction
 
-A very simple [omp server](https://github.com/openmultiplayer/open.mp/releases) template that based on [samp-node](https://github.com/AmyrAhmady/samp-node) and uses the library [@infernus/core](https://github.com/dockfries/omp-node)
-
-## Features
-
-- 🥳 [open.mp](https://github.com/openmultiplayer) for the next generation
-- 🚀 fully embrace the powerful node.js ecosystem
-- 🎉 i18n support for different charsets depending on the player
-- 💡 better data types and asynchronous support
+A very simple [omp server](https://github.com/openmultiplayer/open.mp/releases) template that based on [samp-node](https://github.com/AmyrAhmady/samp-node) and uses the library [@infernus/core](https://github.com/dockfries/infernus)
 
 ## Getting started
 
