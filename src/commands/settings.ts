@@ -13,7 +13,7 @@ playerEvent.onCommandText("isOfficial", (player) => {
   player.sendClientMessage(
     ColorEnum.White,
     $t(
-      isOfficial ? "command.offical.yes" : "command.offical.no",
+      isOfficial ? "command.official.yes" : "command.official.no",
       null,
       player.locale
     )
