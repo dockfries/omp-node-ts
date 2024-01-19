@@ -2,54 +2,7 @@
 
 A very simple [omp server](https://github.com/openmultiplayer/open.mp/releases) template that based on [samp-node](https://github.com/AmyrAhmady/samp-node) and uses the library [@infernus/core](https://github.com/dockfries/infernus)
 
-## Getting started
-
-### Recommended
-
-```sh
-pnpm create @infernus/app
-```
-
-### Manual
-
-> **The necessary files were removed** to ensure that the latest version is always used and that the repository file size is reduced
-
-1. Download the [omp server](https://github.com/openmultiplayer/open.mp/releases), later extract the `omp-server[.exe]` and `components` folder to the project root directory
-2. Download the [samp-node](https://github.com/AmyrAhmady/samp-node/releases), later put `libnode.so/dll` in the project root directory and `samp-node.so/dll` in the plugins folder
-3. Download the [streamer plugin](https://github.com/samp-incognito/samp-streamer-plugin/releases), later put `streamer.so/dll` in the plugins folder
-
-```sh
-# clone the project with https
-git clone https://github.com/dockfries/infernus-starter
-# or ssh
-git clone git@github.com:dockfries/infernus-starter.git
-
-# enter the project directory
-cd infernus-starter
-
-# install dependency
-pnpm install
-
-# change rcon.password in config.json
-vim config.json
-
-"rcon": {
-  "password": "changeme" # change this
-},
-
-# develop (start compilation, listen for changes and restart automatically)
-pnpm dev
-```
-
-## Build
-
-```sh
-# build for production environment
-pnpm build
-
-# run omp server
-pnpm serve
-```
+[📚 **Documentation**](https://dockfries.github.io/infernus/quick-start.html)
 
 ## Notice
 
