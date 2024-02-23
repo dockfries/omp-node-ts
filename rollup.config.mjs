@@ -10,7 +10,7 @@ const isDev = process.env.NODE_ENV === "dev";
 const plugins = [
   externals(),
   nodeResolve(),
-  esbuild({ sourceMap: isDev, minify: !isDev }),
+  esbuild({ target: "node16.13", sourceMap: isDev, minify: !isDev }),
   typescriptPaths({ preserveExtensions: true }),
   json(),
   commonjs(),
