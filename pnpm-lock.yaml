@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@infernus/core':
-        specifier: 0.11.0-beta.7
-        version: 0.11.0-beta.7(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+        specifier: ^0.11.0-beta.10
+        version: 0.11.0-beta.10(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
       pino:
         specifier: ^8.18.0
         version: 8.18.0
@@ -249,8 +249,8 @@ packages:
   '@humanwhocodes/object-schema@2.0.1':
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
 
-  '@infernus/core@0.11.0-beta.7':
-    resolution: {integrity: sha512-4L1sAdbqg1xRuUg1/oATWmJucbFptMvodiGY5WOrMTNOuk2QSQEH8Es7Xo+zlnMyEqFH/y9sYS4TtXLtQrCOhg==}
+  '@infernus/core@0.11.0-beta.10':
+    resolution: {integrity: sha512-aShKdJSBFGhtjzMjE2pmHKImm+RHPjUAIQYERlydeLmVQPS9h+X7+YU9BoMkHaQikk+RgD5s2rNncGwLoKD09w==}
 
   '@infernus/streamer@0.11.1':
     resolution: {integrity: sha512-3Njk3RSPF5YrrqjEUML7zjCe2bEULeGt2/mYTotJVeyoWX8MLBSIaqpGLGDenGwAQ8E0710THs2CRLCAxbT1dw==}
@@ -1681,7 +1681,7 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.1': {}
 
-  '@infernus/core@0.11.0-beta.7(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)':
+  '@infernus/core@0.11.0-beta.10(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)':
     dependencies:
       '@infernus/streamer': 0.11.1
       iconv-lite: 0.6.3
