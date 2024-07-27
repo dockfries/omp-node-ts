@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@infernus/core':
-        specifier: ^0.11.0-beta.10
-        version: 0.11.0-beta.10(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+        specifier: ^0.11.0-beta.11
+        version: 0.11.0-beta.11(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
       pino:
         specifier: ^8.18.0
         version: 8.18.0
@@ -249,11 +249,11 @@ packages:
   '@humanwhocodes/object-schema@2.0.1':
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
 
-  '@infernus/core@0.11.0-beta.10':
-    resolution: {integrity: sha512-aShKdJSBFGhtjzMjE2pmHKImm+RHPjUAIQYERlydeLmVQPS9h+X7+YU9BoMkHaQikk+RgD5s2rNncGwLoKD09w==}
+  '@infernus/core@0.11.0-beta.11':
+    resolution: {integrity: sha512-Gb/JOadVt0006lDUiarpw/1xovPTtjKPbqu5sM9SA7NzLUUctnkOKDnhMm9Dfm0TG0KNNZ3A1XOekl99++VBdw==}
 
-  '@infernus/streamer@0.11.1':
-    resolution: {integrity: sha512-3Njk3RSPF5YrrqjEUML7zjCe2bEULeGt2/mYTotJVeyoWX8MLBSIaqpGLGDenGwAQ8E0710THs2CRLCAxbT1dw==}
+  '@infernus/streamer@0.11.2':
+    resolution: {integrity: sha512-4PtR6cGZgtNhziC8P/ykkr/HOIPgo6WbNchHRwDJ4tPpsuJx1LAbKO3S0sRYtadQiddfrMGjvwrxY9HzIx2nxw==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1681,9 +1681,9 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.1': {}
 
-  '@infernus/core@0.11.0-beta.10(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)':
+  '@infernus/core@0.11.0-beta.11(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)':
     dependencies:
-      '@infernus/streamer': 0.11.1
+      '@infernus/streamer': 0.11.2
       iconv-lite: 0.6.3
       lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
       pino: 8.18.0
@@ -1693,7 +1693,7 @@ snapshots:
       - lodash
       - lodash-es
 
-  '@infernus/streamer@0.11.1': {}
+  '@infernus/streamer@0.11.2': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
