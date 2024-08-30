@@ -8,7 +8,7 @@ A very simple [omp server](https://github.com/openmultiplayer/open.mp/releases) 
 
 - [Why does crash the first time you run it?](https://github.com/dockfries/omp-node-starter/issues/12)
 - `samp-node` plugin should be executed after other plugins, see `config.json -> pawn.legacy_plugins`
-- `samp-node` requires compliance with the `commonjs` specification and has been converted via `rollup`
+- `samp-node` requires compliance with the `commonjs` specification and has been converted via `rslib`
 
 ## Credits
 

@@ -20,37 +20,29 @@
   "scripts": {
     "serve": "pnpm exec ./omp-server",
     "dev": "npm-run-all -p -r -l dev:server dev:watch",
-    "dev:watch": "cross-env NODE_ENV=dev rollup -c -w",
-    "dev:server": "nodemon -x \"pnpm serve\" -I -w dist/bundle.js -d 2",
-    "build": "pnpm clean && cross-env NODE_ENV=prod rollup -c",
-    "clean": "rimraf dist",
+    "dev:watch": "cross-env NODE_ENV=development rslib build -w",
+    "dev:server": "nodemon -x \"pnpm serve\" -I -w dist/bundle.js",
+    "build": "cross-env NODE_ENV=production rslib build",
     "lint": "eslint src/* --fix -c .eslintrc",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@infernus/core": "^0.11.0-beta.11",
-    "pino": "^8.18.0",
+    "@infernus/core": "^0.11.0-beta.13",
+    "@infernus/raknet": "^0.11.1",
+    "pino": "^8.21.0",
     "pino-pretty": "^10.3.1"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.7",
-    "@rollup/plugin-json": "^6.1.0",
-    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rslib/core": "^0.0.4",
     "@sa-mp/node": "^0.2.0",
-    "@types/node": "^20.11.16",
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.20.0",
+    "@types/node": "^20.16.2",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.19.12",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
     "husky": "^8.0.3",
-    "nodemon": "^3.0.3",
+    "nodemon": "^3.1.4",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^5.0.5",
-    "rollup": "^4.9.6",
-    "rollup-plugin-esbuild": "^6.1.1",
-    "rollup-plugin-node-externals": "^6.1.2",
-    "rollup-plugin-typescript-paths": "^1.5.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.5.4"
   }
 }
