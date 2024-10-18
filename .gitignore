@@ -5,6 +5,7 @@ components
 log.txt
 omp-server.exe
 libnode.dll
+logs
 *.log
 *.dmp
 *.pdb
